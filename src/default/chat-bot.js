@@ -26,6 +26,7 @@
 
     window.WebChat.renderWebChat({
         directLine: window.WebChat.createDirectLine(token),
+        userID: '<< PROVIDE USER ID HERE >>',
         styleOptions,
         store
     }, document.getElementById('webchat'));
@@ -34,3 +35,8 @@
 })({
     token: '<< ADD YOR DIRECT LINE TOKEN HERE >>'
 })
+
+function toggleBot() {
+    var element = document.getElementById("chat-box");
+    element.classList.toggle("min");
+  } 
