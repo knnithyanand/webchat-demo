@@ -1,0 +1,132 @@
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0
+}
+#webchat,
+#webchat>* {
+    height: 100%;
+    width: 100%;
+}
+
+.bot-icon {
+    background-color: #39C;
+    border-radius: 50%;
+    border: 2px solid #39C;
+    bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    color: White;
+    cursor: pointer;
+    font-size: 30px;
+    height: 64px;
+    outline: 0;
+    padding: 15px;
+    position: fixed;
+    right: 20px;
+    width: 64px;
+  }
+
+  .chat-box {
+    background-color: rgba(255, 255, 255, .8);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    border: 4px solid #39C;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    min-width: 320px;
+    position: fixed;
+    top: 20px;
+    width: 30%;
+  }
+
+  .chat-box.min>img.avatar-img {
+    display: unset;
+    height: auto;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+  }
+
+  .chat-box>img.avatar-img {
+    display: none;
+  }
+
+  .chat-box.min>header {
+    display: none;
+  }
+
+  .chat-box.min>#webchat {
+    display: none;
+  }
+
+  .chat-box.min {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    min-width: unset;
+    top: unset;
+  }
+
+  .chat-box.left {
+    left: 20px;
+  }
+  
+  .chat-box.right {
+    right: 20px;
+  }
+  
+  .chat-box > header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #39C;
+    height: 40px;
+    display: flex;
+  }
+  .chat-box > header > .avatar-name {
+    font-family: "Calibri", "Helvetica Neue", "Arial", "sans-serif";
+    font-size: x-large;
+}
+  .chat-box > header > .avatar-img {
+    max-width: 32px;
+      height: 90%;
+      padding-right: 10px;
+      padding-left: 10px;
+  }
+  
+  .chat-box > header > .filler {
+    flex: 0 10000 100%;
+  }
+  
+  .chat-box > header > button {
+    width: 40px;
+    height: 40px;
+    background-color: Transparent;
+    border: 0;
+    color: White;
+    cursor: pointer;
+    outline: 0;
+  }
+  
+  .chat-box > header > button:focus:not(:active),
+  .chat-box > header > button:hover:not(:active) {
+    color: rgba(255, 255, 255, .6);
+  }
+  
+  .chat-box > header > button:focus:active {
+    color: rgba(255, 255, 255, .4);
+  }
+  
+  .chat-box > .react-web-chat {
+    flex: 1;
+  }
+  

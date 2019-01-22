@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Chat: IE 11 Mode</title>
+    <link rel="stylesheet" href="chat-bot.css">
+</head>
+
+<body>
+    <div class="chat-box right">
+        <img class="avatar-img" src="http://tattoocoder.com/content/images/2016/04/at-dotnet-bot.png" alt="bot-avatar">
+        <header>
+            <img class="avatar-img" src="http://tattoocoder.com/content/images/2016/04/at-dotnet-bot.png" alt="bot-avatar">
+            <span class="avatar-name">Virtual Assistant</span>
+        </header>
+        <div id="webchat" role="main"></div>
+    </div>
+
+    <script type="text/javascript">
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+            document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.6.2/core.min.js"><\/script>');
+            document.write('<script src="https://cdn.botframework.com/botframework-webchat/master/webchat-es5.js"><\/script>');
+            document.write('<script src="chat-bot.es5.js"><\/script>');
+        } else {
+            document.write('<script src="https://cdn.botframework.com/botframework-webchat/master/webchat.js"><\/script>');
+            document.write('<script src="chat-bot.js"><\/script>');
+        }
+    </script>
+</body>
+
+</html>

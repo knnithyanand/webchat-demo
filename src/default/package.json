@@ -1,0 +1,26 @@
+{
+  "name": "webchat-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chat-bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel chat-bot.js > chat-bot.es5.js",
+    "run": "npx serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knnithyanand/webchat-demo.git"
+  },
+  "author": "Nithyanand K N <knnithyanand@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/knnithyanand/webchat-demo/issues"
+  },
+  "homepage": "https://github.com/knnithyanand/webchat-demo#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1"
+  }
+}
