@@ -18,11 +18,21 @@
 
     <script type="text/javascript">
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+
+            // Add Core-JS polyfill
             document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.6.2/core.min.js"><\/script>');
+
+            // Add ES5 version of webchat control
             document.write('<script src="https://cdn.botframework.com/botframework-webchat/master/webchat-es5.js"><\/script>');
+
+            // Add ES5 version of bot initialization script
             document.write('<script src="chat-bot.es5.js"><\/script>');
         } else {
+
+            // Add full-version of webchat control
             document.write('<script src="https://cdn.botframework.com/botframework-webchat/master/webchat.js"><\/script>');
+
+            // Add bot initialization script
             document.write('<script src="chat-bot.js"><\/script>');
         }
     </script>
