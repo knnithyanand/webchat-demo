@@ -27,13 +27,20 @@ This sample control has following base set of features:
 
 ### Running the Sample
 
-First replace your bot channel secret inside the javascript file at the section shown below:
+First replace your bot channel secret inside the `bot-config.json` file at the section shown below:
 
-``` js
-({
-    token: '<< ADD YOR DIRECT LINE TOKEN HERE >>'
-})
+``` json
+{
+    "token":"<< ADD YOR DIRECT LINE TOKEN HERE >>",
+    "userID": "<< PROVIDE USER ID HERE >>",
+    "botAvatarImage": "https://docs.botframework.com/images/bot_icon.png",
+    "botAvatarInitials": "BF",
+    "userAvatarImage": "https://github.com/knnithyanand.png?size=64",
+    "userAvatarInitials": "KN"
+}
 ```
+
+> Feel free to update other parameters such as Bot / User Avatar image and Initials. Initials are displayed when image url is not set or cannot be resolved.
 
 In order to run this sample, run the following commands:
 
