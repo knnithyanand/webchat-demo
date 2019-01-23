@@ -1,5 +1,22 @@
 # Default Sample
 
+## Features
+
+This sample control has following base set of features:
+
+- Show as small floating button at the bottom of page (always on top)
+- Expand chat control when clicked on floating button
+- Able to collapse / minimize conversations window by clicking on chat window header
+- Chat control only takes limited amount of space (max-width)
+- Able to set chat window position left or right
+- Show bot avatar in floating button as well as in header
+- Display bot / user avatar next to message dialog
+- Disables attachments icon, can be enabled back when required
+- Show “New Messages” button when user scrolls up the chat history
+- Navigate to bottom of the conversation when clicked on “New Messages” button
+- Support legacy browsers such as IE using ES5 and polyfills (core-js)
+- Pass all bot configuration by passing path to a JSON document
+
 ## Getting Started
 
 ### Prerequisite
