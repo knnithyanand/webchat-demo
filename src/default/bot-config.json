@@ -1,0 +1,8 @@
+{
+    "token":"<< ADD YOR DIRECT LINE TOKEN HERE >>",
+    "userID": "<< PROVIDE USER ID HERE >>",
+    "botAvatarImage": "https://docs.botframework.com/images/bot_icon.png",
+    "botAvatarInitials": "BF",
+    "userAvatarImage": "https://github.com/knnithyanand.png?size=64",
+    "userAvatarInitials": "KN"
+}
